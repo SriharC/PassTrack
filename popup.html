@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE-Edge"
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"
+  <link rel="stylesheet" href="./styles/app.css">
+  <title>Strong Password</title>
+</head>
+<body>
+
+    <div class="container">
+        <div class="PassTrack-icon-div">
+            <img src="./assets/PassTrack-icon.png" alt="PassTrack Icon"
+        </div>
+
+        <section class="settings-container">
+            <div class="setting">
+                <label for="includeDigits">
+                    <span>Digits</span>
+                    <span></span>
+                </label>
+                <input type="checkbox" id="includeDigits" checked>
+            </div>
+            <div class="setting">
+                <label for="specialChar">
+                    <span>Special Characters</span>
+                    <span></span>
+                </label>
+                <input type="checkbox" id="specialChar">
+            </div>
+            <div class="setting">
+                <label for="LowerUpper">
+                    <span>Lowercase & Uppercase Letters</span>
+                    <span></span>
+                </label>
+                <input type="checkbox" id="LowerUpper">
+            </div>
+        </section>
+
+        <section class="character-length">
+            <p>Your password will be <span id=charLengthSpan">15</span> characters long</p>
+            <p>*Move slider to adjust password length</p>
+            <input type="range" id="characterLengthSlider" min="10" max="75" value="15">
+        </section>
+
+        <section class="generated-password">
+            <input type="text" id="generatedPassword" spellcheck="false">
+            <button class="copy-password" id="copyPassword">copy</button>
+            <div class="confirmation" id="confirmation">
+              <p>password copied</p>
+            </div>
+        </section>
+    </div>
+
+    <script src="./scripts/app.js"></script>
+</body>
+</html>

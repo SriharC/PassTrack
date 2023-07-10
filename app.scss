@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans')
+
+$primary: #AFE4F4;
+$white:#fff;
+$text-dark:#616b74;
+$text-darker:#465059;
+$text-light:#8E9BA7;
+$light-gray:#CCCFD3;
+$lighter-gray:#F5F5F5;
+$logo-size:50px;
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: 0;
+}
+
+body {
+    font-family: 'Fira Sans', PT Sans;
+    font-size: 16px;
+    font-weight: 400;
+    background-color: $primary;
+    color: $text-dark;
+    padding: 3rem .5rem .5rem;
+}
