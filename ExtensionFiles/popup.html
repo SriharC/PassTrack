@@ -2,18 +2,24 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE-Edge"
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"
+  <meta http-equiv="X-UA-Compatible" content="IE-Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./styles/app.css">
   <title>PassTrack</title>
 </head>
 <body>
-
+<!-- Password Generator feature -->
     <div class="container">
         <div class="PassTrack-icon-div">
-            <img src="./assets/PassTrack-icon.png" alt="PassTrack Icon"
+            <img src="./assets/PassTrack-Icon48.png" alt="PassTrack Icon">
         </div>
 
+        <section class="header-h1">
+            <div class="header">
+                <h1>PassTrack</h1>
+            </div>
+        </section>
+            
         <section class="settings-container">
             <div class="setting">
                 <label for="includeDigits">
@@ -39,7 +45,7 @@
         </section>
 
         <section class="character-length">
-            <p>Your password will be <span id=charLengthSpan">15</span> characters long</p>
+            <p>Your password will be <span id="charLengthSpan">15</span> characters long</p>
             <p>*Move slider to adjust password length</p>
             <input type="range" id="characterLengthSlider" min="10" max="75" value="15">
         </section>
