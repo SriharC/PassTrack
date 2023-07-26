@@ -1,0 +1,209 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Fira Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  background-color: #AFE4F4;
+  color: #616b74;
+  padding: 3rem 0.5rem 0.5rem;
+}
+
+.container {
+  width: 400px;
+  background-color: #D9D9D9;
+  border-radius: 1rem;
+  padding: 1.5rem 1rem 1rem 1.5rem;
+  position: relative;
+}
+
+.lock-logo-div {
+  position: absolute;
+  top: -25px;
+  left: 1rem;
+  height: 50px;
+  width: 50px;
+  border: 6px solid #AFE4F4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+.lock-logo-div img {
+  width: 0.9rem;
+}
+
+section.header-h1 {
+  margin: -3rem auto 1rem;
+  text-align: center;
+  color: #11D0FA;
+}
+
+section.settings-container .setting {
+  display: flex;
+  align-items: center;
+  margin: 1.5rem auto;
+}
+section.settings-container .setting label {
+  width: 80%;
+  padding-right: 1rem;
+}
+section.settings-container .setting label span {
+  display: block;
+}
+section.settings-container .setting label span:first-of-type {
+  font-weight: 500;
+  font-size: 0.9rem;
+}
+section.settings-container .setting label span:last-of-type {
+  font-weight: 300;
+  color: black;
+  font-size: 0.7rem;
+  margin-top: 0.15rem;
+}
+section.settings-container .setting input[type=checkbox] {
+  -moz-appearance: none;
+       appearance: none;
+  -webkit-appearance: none;
+  position: relative;
+  width: 50px;
+  min-width: 50px;
+  background-color: #F5F5F5;
+  height: 30px;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+section.settings-container .setting input[type=checkbox]::after {
+  content: "";
+  position: absolute;
+  transform: translate(-50%, -50%);
+  width: 21px;
+  height: 21px;
+  background-color: white;
+  border-radius: 50%;
+  top: 50%;
+  left: 30%;
+  transition: all 0.3s ease;
+}
+section.settings-container .setting input[type=checkbox]:checked {
+  background-color: #AFE4F4;
+}
+section.settings-container .setting input[type=checkbox]:checked::after {
+  left: 70%;
+}
+
+section.character-length {
+  margin: 4rem auto 3rem;
+  text-align: center;
+}
+section.character-length p:first-of-type {
+  font-weight: 500;
+  font-size: 0.9rem;
+}
+section.character-length p:first-of-type span {
+  color: #0c0e0f;
+  font-size: 1rem;
+}
+section.character-length p:last-of-type {
+  margin: 0.5rem auto 1rem;
+  font-size: 0.7rem;
+  color: #0c0e0f;
+}
+section.character-length input[type=range] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+       appearance: none;
+  cursor: pointer;
+  width: 75%;
+  outline: none;
+  border-radius: 2rem;
+}
+section.character-length input[type=range]::-webkit-slider-runnable-track {
+  background-color: #AFE4F4;
+  height: 0.35rem;
+}
+section.character-length input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  margin-top: -7px;
+  background-color: #0c0e0f;
+  height: 1rem;
+  width: 1rem;
+  border-radius: 50%;
+}
+section.character-length input[type=range]:focus::-webkit-slider-thumb {
+  border: 1px solid #eee;
+  outline: 3px solid #eee;
+  outline-offset: 0.125rem;
+}
+
+section.generated-password {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+section.generated-password input, section.generated-password button {
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 500;
+  height: 3rem;
+}
+section.generated-password input {
+  width: 100%;
+  border-radius: 0.5rem 0 0 0.5rem;
+  border: 1px solid #AFE4F4;
+  border-right: none;
+  background-color: #AFE4F4;
+  padding: 0.5rem 0.5rem 0.5rem 0.1rem;
+  font-size: 1rem;
+  color: #0c0e0f;
+  outline: none;
+}
+section.generated-password button {
+  height: 3rem;
+  width: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #616b74;
+  border-radius: 0 0.5rem 0.5rem 0;
+  background-color: transparent;
+  cursor: pointer;
+  color: #0c0e0f;
+  transition: background-color 0.3s ease;
+}
+section.generated-password button:hover {
+  background-color: #eee;
+}
+section.generated-password .confirmation {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 100%;
+  width: 100%;
+  background-color: #D9D9D9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 500;
+  pointer-events: none;
+  opacity: 0;
+  transition: all 0.1s ease;
+}
+section.generated-password .confirmation p {
+  transform: scale(0.2);
+  transition: transform 0.3s ease;
+}
+section.generated-password .confirmation.active {
+  pointer-events: all;
+  opacity: 1;
+}
+section.generated-password .confirmation.active p {
+  transform: scale(1.1);
+}/*# sourceMappingURL=app.css.map */
