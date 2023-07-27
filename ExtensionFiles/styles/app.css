@@ -76,6 +76,18 @@ body {
   width: 0.9rem;
 }
 
+a.back-button {
+  display: inline-block;
+  padding: 8px 16px;
+  background-color: #D9D9D9;
+  color: #0c0e0f;
+  font-family: "Fira Sans", sans-serif;
+  font-size: 16px;
+  text-decoration: none;
+  border: none;
+  border-radius: 4px;
+}
+
 section.header-h1 {
   margin: -3rem auto 1rem;
   text-align: center;
