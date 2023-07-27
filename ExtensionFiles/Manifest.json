@@ -3,6 +3,7 @@
     "name": "PassTrack",
     "description": "Welcome to PassTrack",
     "version": "1.0",
+    "permissions": ["storage"],
     "icons": {
         "16": "./assets/PassTrack-Icon16.png",
         "48": "./assets/PassTrack-Icon48.png",
@@ -10,6 +11,10 @@
     },
     "action": {
         "default_icon": "./assets/PassTrack-Icon48.png",
-        "default_popup": "./popup.html"
+        "default_popup": "./homepage.html"
+    },
+    "background": {
+        "scripts": ["background.js"],
+        "persistent": false
     }
 }
