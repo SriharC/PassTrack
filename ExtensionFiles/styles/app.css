@@ -193,6 +193,28 @@ section.character-length input[type=range]:focus::-webkit-slider-thumb {
   outline-offset: 0.125rem;
 }
 
+section.generated-tips {
+  position: relative;
+  top: 40px; bottom: 40px;
+  display: flex;
+  align-items: center;
+}
+
+section.generated-tips input {
+  width: 100%;
+  border-radius: 0.7rem 0.7rem 0.7rem 0.7rem;
+  border: 1px solid #AFE4F4;
+  border-right: none;
+  background-color: #AFE4F4;
+  padding: 0.6rem 0.6rem 0.6rem 0.2rem;
+  font-size: 1rem;
+  color: #0c0e0f;
+  outline: none;
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 500;
+  height: 10rem;
+}
+
 section.generated-password {
   position: relative;
   display: flex;
