@@ -8,6 +8,6 @@ PassTrack is a password security browser extension designed for businesses and e
 
 # UI
 
-![2023-07-26 20_25_48-New Tab](https://github.com/SriharC/PassTrack/assets/42175655/ed90568b-d4c1-43bb-a0a5-43f53a2045c9)
+![2023-07-26 20_29_20-](https://github.com/SriharC/PassTrack/assets/42175655/5227f98f-1ecd-4965-8b9d-45d100a870ad)
 
 A simple UI with the features: Password Generator, Breach Checker, Password Tips, and Settings.
