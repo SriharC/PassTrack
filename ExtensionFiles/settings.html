@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE-Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./styles/app.css">
+  <title>PassTrack</title>
+</head>
+<body>
+<!-- PassTrack Homepage -->
+    <div class="container">
+        <div class="PassTrack-icon-div">
+            <img src="./assets/PassTrack-Icon48.png" alt="PassTrack Icon">
+        </div>
+
+        <section class="header-h1">
+            <div class="header">
+                <h1>PassTrack</h1>
+            </div>
+        </section>
+        
+        <section class="settings-container">
+
+            <div class="account">
+                <div class="account-info">
+                    <h2 style="font-size: 18px; margin-bottom: 6px;">Change Account Info</h2>
+                </div>
+                <button class="account-button">Button 1</button>
+                <div class="master-pass">
+                    <h2 style="font-size: 18px; margin-bottom: 6px;">Change Master Password</h2>
+                </div>
+                <button class="account-button">Button 2</button>
+                <div class="log-out">
+                    <h2 style="font-size: 18px; margin-bottom: 6px;">Log Out</h2>
+                </div>
+                <button class="account-button">Button 3</button>
+            </div>
+            
+            <div class="customization">
+                <div class="ui-color">
+                    <h2 for="uiColor" style="font-size: 18px; margin-bottom: 6px;">Choose UI Color:</h2>
+                    <input type="color" id="uiColor">
+                </div>
+
+                <button onclick="saveSettings()">Save</button>
+
+                <script>
+                    function saveSettings() {
+                        console.log('Saving settings...');
+                        const uiColor = document.getElementById('uiColor').value;
+                        chrome.storage.sync.set({ uiColor: uiColor }, function() {
+                // Notify the user that the settings are saved
+                            alert('UI color saved!');
+                        });
+                    // Save the selected UI color to your extension's storage or use it as needed
+                    }
+                </script>
+            </div>
+
+        </section>
+
+        <section class="character-length">
+        </section>
+
+        <section class="generated-password">
+        </section>
+        
+        <a href="homepage.html" class="back-button">Back</a>
+
+    </div>
+
+    <script src="./scripts/app.js"></script>
+</body>
+</html>
