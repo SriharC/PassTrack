@@ -8,6 +8,20 @@
   <title>PassTrack</title>
 </head>
 <body>
+<div id="main-body">
+
+<!--Navigation Bar-->
+<div id="navigation-bar">
+    <ul>
+        <li>
+            <a class="active" href="popup.html">Home</a>
+        </li>
+        <li>
+            <a href="savedInfo.html">Saved Info</a>
+        </li>
+    </ul>
+</div>
+
 <!-- Password Generator feature -->
     <div class="container">
         <div class="PassTrack-icon-div">
@@ -57,8 +71,26 @@
               <p>password copied</p>
             </div>
         </section>
+        <div>
+            <button class="saveInfoButton">Save Info</button>
+        </div>
     </div>
-
+</div>
+<div id="popup" class="close">
+    <div id="saveInfoPopup">
+        <label for="url">URL</label>
+        <input type="text" id="saveUrl">
+        <label for="username">username</label>
+        <input type="text" id="saveUsername">
+        <label for="password">password</label>
+        <input type="text" id="savePassword">
+        <div class="popupButtons">
+            <button id="finalSave" class="save">Save</button>
+            <button class="cancel">Cancel</button>
+        </div>
+    </div>
+</div>
     <script src="./scripts/app.js"></script>
+    <script src="./scripts/savePassword.js"></script>
 </body>
 </html>
