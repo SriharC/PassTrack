@@ -12,9 +12,5 @@
     "action": {
         "default_icon": "./assets/PassTrack-Icon48.png",
         "default_popup": "./homepage.html"
-    },
-    "background": {
-        "scripts": ["background.js"],
-        "persistent": false
     }
 }
