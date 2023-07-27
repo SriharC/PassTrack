@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE-Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./styles/app.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <title>PassTrack</title>
+</head>
+<body>
+    <!--Navigation Bar-->
+<div id="navigation-bar">
+    <ul>
+        <li>
+            <a href="popup.html">Home</a>
+        </li>
+        <li>
+            <a class="active" href="savedInfo.html">Saved Info</a>
+        </li>
+    </ul>
+</div>
+<!---->
+<div class="container">
+    <ul class="passwordLists">
+        <li>
+            <input class="editAll" type="text" id="editURL" value="url" disabled>
+            <input class="editAll" type="text" id="editUsername" value="username" disabled>
+            <input class="editAll" type="text" id="editPassword" value="password" disabled>
+            <button class="noHover">edit</button>
+        </li>
+        <hr>
+    </ul>
+</div>
+<script src="./scripts/loadPassword.js"></script>
+</body>
+</html>
